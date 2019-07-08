@@ -219,14 +219,14 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Rapids: 1 day
         nTargetSpacing = 2 * 60;  // Rapids: 1 minute
-        nLastPOWBlock = 200;
-        nMaturity = 15;
+        nLastPOWBlock = 1001; //200
+        nMaturity = 5; //15
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 1;
-        nMaxMoneyOut = 21000000 * COIN;
+        nMaxMoneyOut = 51000000 * COIN; //21000000
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1534570200;
+        genesis.nTime = 1562563800; //1534570200;
         genesis.nNonce = 21148656;
 
         hashGenesisBlock = genesis.GetHash();
@@ -250,8 +250,8 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
-        fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = false;
+        fMiningRequiresPeers = false; //true
+        fAllowMinDifficultyBlocks = true; //false
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
         fMineBlocksOnDemand = false;
@@ -260,7 +260,7 @@ public:
         nPoolMaxTransactions = 2;
         strSporkKey = "041bab97de321ccf1e78d10164f90bd87e3070ddb5586389013e9f15c4931e2451f318f1a8f177c5e9a3f5b4b13145f78e8116d2aa7ae14ef27f1f076b02ba852c";
         strMasternodePoolDummyAddress = "gbJ4Qad4xc77PpLzMx6rUegAs6aUPWkcUq";
-        nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis
+        nStartMasternodePayments = genesis.nTime + 3600; //86400; // 24 hours after genesis
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
     }
