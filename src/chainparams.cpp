@@ -152,10 +152,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0xb8ac00f6c7839f841a053c5f63e81015d631b81cc633692aab3858021fb9cab3"));
 
         // DNS Seeding
-        vSeeds.push_back(CDNSSeedData("68.183.236.217", "68.183.236.217"));
-        vSeeds.push_back(CDNSSeedData("159.65.189.155", "159.65.189.155"));
-        vSeeds.push_back(CDNSSeedData("209.97.188.183", "209.97.188.183"));
-        vSeeds.push_back(CDNSSeedData("104.248.169.67", "104.248.169.67"));
+        vSeeds.push_back(CDNSSeedData("85.214.16.102", "85.214.16.102"));
+        vSeeds.push_back(CDNSSeedData("188.64.45.119", "188.64.45.119"));
+        //vSeeds.push_back(CDNSSeedData("209.97.188.183", "209.97.188.183"));
+        //vSeeds.push_back(CDNSSeedData("104.248.169.67", "104.248.169.67"));
 
         // Rapids addresses start with 'R'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 61);
